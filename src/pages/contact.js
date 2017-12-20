@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
   }
 
   handleSubmit = e => {
-    fetch("/", {
+    fetch("https://gerald-gatsby-form-test.netlify.com/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
